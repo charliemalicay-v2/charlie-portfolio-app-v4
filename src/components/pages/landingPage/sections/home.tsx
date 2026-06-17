@@ -6,6 +6,8 @@ import Link from 'next/link';
 
 import { ReactTyped } from "react-typed";
 
+import { Titles } from '@/components/constants/title';
+
 import { buttonVariants } from "@/components/ui/button";
 
 import heroImage from '@/assets/images/hero-home.jpg';
@@ -20,7 +22,7 @@ const Home = () => {
                 <div className="flex flex-col gap-y-0 md:gap-y-4">
                     <p className="!font-raleway text-[#45505b] text-3xl md:text-6xl font-bold">Charliemagne Malicay</p>
                     <p className="!font-raleway pl-1 md:pl-2 !text-[#45505b] text-2xl">I'm {" "}
-                        <ReactTyped strings={["Fullstack Developer", "Software Engineer", "AI Engineer", "Freelancer" ]}
+                        <ReactTyped strings={Object.values(Titles)}
                                     typeSpeed={100} loop backSpeed={20} cursorChar="|" showCursor={true} />
                     </p>
                     <div className="flex flex-row gap-y-2">
