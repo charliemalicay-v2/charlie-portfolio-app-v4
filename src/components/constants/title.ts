@@ -4,7 +4,8 @@ const Titles = Object.freeze({
   DEVOPS: "Devops",
   AWS_CERTIFIED: "AWS Certified Cloud Practitioner",
   MACHINE_LEARNING: "Machine Learning Engineer",
-  SOFTWARE_ENGINEER: "Software Engineer"
+  SOFTWARE_ENGINEER: "Software Engineer",
+  AWS_DEVELOPER: "AWS Developer"
 });
 
 export {
