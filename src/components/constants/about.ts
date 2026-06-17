@@ -50,6 +50,13 @@ const ABOUT_PERSONAL_INFO = Object.freeze({
     }
   })
 
+const ABOUT_EDUCATION_INFO = Object.freeze({
+    DEGREE: "Bachelor of Science in Computer Engineering",
+    INSTITUTION: "University of the Immaculate Conception",
+    DATE: "March 23, 2014",
+    DESCRIPTION: "Comprehensive study of hardware architectures, embedded systems, software engineering, and digital circuit design."
+});
+
 const ABOUT_ENUM_DATA = {
   "career_summary": {
     "experience_years": 11,
@@ -80,5 +87,6 @@ export {
     ABOUT_INFO_2,
     ABOUT_INFO_3,
     ABOUT_PERSONAL_INFO,
+    ABOUT_EDUCATION_INFO,
     ABOUT_ENUM_DATA
 }
