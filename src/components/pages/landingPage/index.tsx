@@ -8,6 +8,7 @@ import Home from "@/components/pages/landingPage/sections/home";
 import About from "@/components/pages/landingPage/sections/about";
 import Skills from "@/components/pages/landingPage/sections/skills";
 import Resume from "@/components/pages/landingPage/sections/resume";
+import Certificates from './sections/certificates';
 
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
             <About />
             <Skills />
             <Resume />
+            <Certificates />
         </div>
     );
 }
