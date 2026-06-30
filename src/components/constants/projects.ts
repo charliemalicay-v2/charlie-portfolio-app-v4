@@ -19,6 +19,13 @@ const PROJECTS_INFO = Object.freeze({
         technologies: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
         repository: "https://github.com/charliemalicay/veterinary-appointment-app",
         liveDemo: "https://veterinary-appointment-application.vercel.app/"
+    },
+    SURVIVAL_MANAGEMENT_APP: {
+        name: "Survival Management App",
+        description: "A web application for scheduling and managing survival-related activities.",
+        technologies: ["Next.js 16", "Tailwind v4", "MUI v9", "ShadCN", "Redux Toolkit", "Recharts v3", "Leaflet", "react-leaflet", "Lucide React", "Iconify", "ShadCN"],
+        repository: "https://github.com/charliemalicay-v2/survival-management-app",
+        liveDemo: "https://survival-management-app.vercel.app/"
     }
 });
 
