@@ -10,14 +10,14 @@ const PROJECTS_INFO = Object.freeze({
         name: "SmartMove AI App",
         description: "An AI-powered application for smart movement planning and optimization.",
         technologies: ["Python", "TensorFlow", "Flask", "PostgreSQL"],
-        repository: "https://github.com/charliemalicay/smart-move-ai-app",
+        repository: "https://github.com/charliemalicay-v2/smartmove-ai-frontend-app",
         liveDemo: "https://smart-move-ai-app-2.vercel.app/"
     },
     VETERINARY_APPOINTMENT_APP: {
         name: "Veterinary Appointment App",
         description: "A web application for scheduling and managing veterinary appointments.",
-        technologies: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
-        repository: "https://github.com/charliemalicay/veterinary-appointment-app",
+        technologies: ["Next.js", "React", "Chakra UI", "Tailwind CSS", "TypeScript", "Formik", "Moment.js", "react-datepicker", "Iconify"],
+        repository: "https://github.com/charliemalicay-v2/veterinary-appointment-application",
         liveDemo: "https://veterinary-appointment-application.vercel.app/"
     },
     SURVIVAL_MANAGEMENT_APP: {
@@ -25,7 +25,7 @@ const PROJECTS_INFO = Object.freeze({
         description: "A web application for scheduling and managing survival-related activities.",
         technologies: ["Next.js 16", "Tailwind v4", "MUI v9", "ShadCN", "Redux Toolkit", "Recharts v3", "Leaflet", "react-leaflet", "Lucide React", "Iconify", "ShadCN"],
         repository: "https://github.com/charliemalicay-v2/survival-management-app",
-        liveDemo: "https://survival-management-app.vercel.app/"
+        liveDemo: "https://survival-management-app-mu.vercel.app/"
     }
 });
 
