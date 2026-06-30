@@ -126,7 +126,7 @@ const Skills = () => {
                                                 {tech.years} {tech.years === 1 ? 'yr' : 'yrs'}
                                             </span>
                                         </div>
-                                        <p className="text-xs font-bold text-gray-400">{tech.rate * 100}%</p>
+                                        <p className="text-xs font-bold text-gray-700">{tech.rate * 100}%</p>
                                     </div>
                                     
                                     {/* Graphic Performance Bar */}
