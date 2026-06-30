@@ -9,6 +9,7 @@ import About from "@/components/pages/landingPage/sections/about";
 import Skills from "@/components/pages/landingPage/sections/skills";
 import Resume from "@/components/pages/landingPage/sections/resume";
 import Certificates from './sections/certificates';
+import Projects from './sections/projects';
 
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
             <Home />
             <About />
             <Skills />
+            <Projects />
             <Resume />
             <Certificates />
         </div>

@@ -17,13 +17,20 @@ const MobileNavbar = () => {
 
     return (
         <>
-            <Button variant="outline" size="icon" onClick={() => setOpenNavBar(!openNavBar)}
-                    className="flex justify-center items-center md:hidden fixed top-[20px] right-[20px] z-[3]
-                                cursor-pointer rounded-full size-[45px] bg-[#0563bb] p-0">
-                { openNavBar ?
-                    <X className="text-white size-[25px]" /> :
+            <Button
+                variant="outline"
+                size="icon"
+                onClick={() => setOpenNavBar(!openNavBar)}
+                aria-label={openNavBar ? "Close menu" : "Open menu"}
+                title={openNavBar ? "Close menu" : "Open menu"}
+                className="flex justify-center items-center md:hidden fixed top-[20px] right-[20px] z-[3]
+                                cursor-pointer rounded-full size-[45px] bg-[#0563bb] p-0"
+            >
+                {openNavBar ? (
+                    <X className="text-white size-[25px]" />
+                ) : (
                     <AlignJustify className="text-white size-[25px]" />
-                }
+                )}
             </Button>
             <Sheet open={openNavBar} onOpenChange={setOpenNavBar}>
                 <SheetContent className="flex flex-col justify-center w-[50%] min-w-[200px]" side="left">
