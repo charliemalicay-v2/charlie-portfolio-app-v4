@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink, Github, ImageOff } from "lucide-react"
 import { PROJECTS_INFO } from '@/components/constants/projects'
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 
 const Projects = () => {
     const projects = Object.values(PROJECTS_INFO)
+    const [imgErrors, setImgErrors] = React.useState<Record<number, boolean>>({})
 
     return (
         <div className="min-h-screen w-full flex flex-col items-center pt-12 bg-gray-50/30">
@@ -29,11 +30,18 @@ const Projects = () => {
                             role="link"
                             aria-label={`View ${project.name} live demo`}
                         >
-                            <img
-                                src={`/api/screenshot?url=${encodeURIComponent(project.liveDemo)}`}
-                                alt={`${project.name} preview`}
-                                className="absolute bottom-3 right-3 w-36 h-24 object-cover rounded-lg border border-gray-200 shadow-sm pointer-events-none"
-                            />
+                            {imgErrors[index] ? (
+                                <div className="absolute bottom-3 right-3 w-36 h-24 flex items-center justify-center rounded-lg border border-gray-200 bg-gray-100 shadow-sm">
+                                    <ImageOff className="size-8 text-gray-300" />
+                                </div>
+                            ) : (
+                                <img
+                                    src={`/api/screenshot?url=${encodeURIComponent(project.liveDemo)}`}
+                                    alt={`${project.name} preview`}
+                                    className="absolute bottom-3 right-3 w-36 h-24 object-cover rounded-lg border border-gray-200 shadow-sm pointer-events-none"
+                                    onError={() => setImgErrors(prev => ({ ...prev, [index]: true }))}
+                                />
+                            )}
                             <CardContent className="relative z-10 flex flex-col gap-4 pt-6">
                                 <h3 className="text-lg font-bold !font-raleway text-[#45505b] leading-snug">
                                     {project.name}
