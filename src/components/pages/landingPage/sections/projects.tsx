@@ -48,6 +48,20 @@ const Projects = () => {
                                         </Badge>
                                     ))}
                                 </div>
+                                <div className="flex flex-wrap items-center gap-2">
+                                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">AI Tools:</span>
+                                    {project.ai_tools.length > 0 ? (
+                                        project.ai_tools.map((tool, i) => (
+                                            <Badge key={i} variant="outline" className="text-[11px]">
+                                                {tool}
+                                            </Badge>
+                                        ))
+                                    ) : (
+                                        <Badge variant="outline" className="text-[11px] text-gray-400">
+                                            None AI
+                                        </Badge>
+                                    )}
+                                </div>
                             </CardContent>
                             <CardFooter className="gap-3 pt-2">
                                 <Button variant="outline" size="sm" asChild>

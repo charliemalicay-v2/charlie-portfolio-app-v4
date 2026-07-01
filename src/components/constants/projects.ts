@@ -4,6 +4,7 @@ const PROJECTS_INFO = Object.freeze({
         description: "A web application that allows users to create and manage tasks with links to related resources.",
         technologies: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
         repository: "https://github.com/charliemalicay/link-based-task-app",
+        ai_tools: ["Claude Code"],
         liveDemo: "https://link-based-task-app.vercel.app/"
     },
     SMARTMOVE_AI_APP: {
@@ -11,6 +12,7 @@ const PROJECTS_INFO = Object.freeze({
         description: "An AI-powered application for smart movement planning and optimization.",
         technologies: ["Python", "TensorFlow", "Flask", "PostgreSQL"],
         repository: "https://github.com/charliemalicay-v2/smartmove-ai-frontend-app",
+        ai_tools: ["WindSurf"],
         liveDemo: "https://smart-move-ai-app-2.vercel.app/"
     },
     VETERINARY_APPOINTMENT_APP: {
@@ -18,6 +20,7 @@ const PROJECTS_INFO = Object.freeze({
         description: "A web application for scheduling and managing veterinary appointments.",
         technologies: ["Next.js", "React", "Chakra UI", "Tailwind CSS", "TypeScript", "Formik", "Moment.js", "react-datepicker", "Iconify"],
         repository: "https://github.com/charliemalicay-v2/veterinary-appointment-application",
+        ai_tools: [],
         liveDemo: "https://veterinary-appointment-application.vercel.app/"
     },
     SURVIVAL_MANAGEMENT_APP: {
@@ -25,6 +28,7 @@ const PROJECTS_INFO = Object.freeze({
         description: "A web application for scheduling and managing survival-related activities.",
         technologies: ["Next.js 16", "Tailwind v4", "MUI v9", "ShadCN", "Redux Toolkit", "Recharts v3", "Leaflet", "react-leaflet", "Lucide React", "Iconify", "ShadCN"],
         repository: "https://github.com/charliemalicay-v2/survival-management-app",
+        ai_tools: [],
         liveDemo: "https://survival-management-app-mu.vercel.app/"
     }
 });
